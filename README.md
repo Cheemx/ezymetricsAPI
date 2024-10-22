@@ -1,0 +1,37 @@
+
+# API Service
+
+## Assignment Details:
+This project was created as part of an assignment for the application of the Full Stack Developer (Backend Developer) role at Ezymetrics.
+
+## Setup Instructions:
+1. Clone the repository.
+2. Run `npm install` to install the required dependencies.
+3. Set the necessary environment variables in a `.env` file (e.g., MongoDB connection URI, port).
+4. Start the server with `npm start`.
+
+## API Endpoints:
+
+### 1. **CRM Routes:**
+   - **GET `/api/crm/leads`**
+     - Fetch CRM leads from the database.
+     - **Response:** Returns a list of leads.
+   
+### 2. **Marketing Routes:**
+   - **GET `/api/marketing/campaigns`**
+     - Fetch marketing campaigns from the database.
+     - **Response:** Returns a list of campaigns.
+
+### 3. **Metrics and Reporting Routes:**
+   - **GET `/api/report/metrics`**
+     - Fetch and calculate conversion metrics for campaigns.
+     - **Response:** Returns campaign metrics including the conversion rate.
+   
+   - **GET `/api/report/download`**
+     - Generate a PDF report for campaign performance.
+     - **Response:** Triggers the download of the generated PDF report.
+
+### 4. **Alerting Routes:**
+   - **POST `/api/alerts/low-conversion`**
+     - Send an email alert for campaigns with a conversion rate lower than 5%.
+     - **Response:** Sends email alerts to campaign-related leads.

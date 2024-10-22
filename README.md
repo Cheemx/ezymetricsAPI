@@ -32,7 +32,7 @@ This project was created as part of an assignment for the application of the Ful
      - **Response:** Triggers the download of the generated PDF report.
 
 ### 4. **Alerting Routes:**
-   - **POST `/marketing/check-campaign-leads`**
+   - **GET `/marketing/check-campaign-leads`**
      - Send an email alert for campaigns with a conversion rate lower than 5%.
      - **Response:** Sends email alerts to campaign-related leads.
      - This route won't work because I couldn't setup any relation between leads and campaigns so couldn't figure out for receivers!
